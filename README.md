@@ -74,22 +74,3 @@ Finally, this section directly compares the ALS model with the SASRec model.
 ![Basket Coverage - ALS vs SASRec](fig_9_ALS_vs_SASRec_Coverage.png)
 
 *ALS provided significantly better basket coverage than SASRec.*
-
-
-## Overall Consumer Behavior Metrics (Simulated)
-
-These metrics provide a high-level view of customer behavior. In a real-world scenario, these would be directly calculated from granular transaction data. Here, they are simulated for demonstration purposes.
-
-### Churn Metrics
-
--   **Overall Churn Rate:** {consumer_churn_metrics['overall_churn_rate']:.2%}
--   **Number of Churned Users (Simulated):** {consumer_churn_metrics['num_churned_users']}
--   *(Based on a simulated {consumer_churn_metrics['total_users_considered']} users)*
-
-### Customer Lifetime Value (CLTV) Metrics
-
--   **Overall Average CLTV:** ${consumer_cltv_metrics['overall_average_cltv']:.2f}
--   **CLTV Standard Deviation:** ${consumer_cltv_metrics['cltv_std_dev']:.2f}
--   *(Based on a simulated {consumer_cltv_metrics['total_users_considered']} users)*
-
-**Note on Consumer Metrics:** For a true assessment of recommender system impact on churn and CLTV, a long-running A/B test is required where different user groups are exposed to different recommendation strategies, and their subsequent long-term behavior (churn, purchases leading to CLTV) is tracked.
