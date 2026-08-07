@@ -23,122 +23,27 @@ This notebook performs A/B testing and evaluation of different recommendation sy
 
 Additionally, the project integrates simulated consumer metrics like Churn Rate and Customer Lifetime Value (CLTV) to provide a more holistic business perspective.
 
-## A/B Test Results Summary
+## Key Visualizations
 
-The following visualizations and summaries present the comparison of the recommender systems across various metrics.
+These plots provide a concise overview of the performance comparison across all three recommender systems (Popularity-based Baseline, ALS, and SASRec) for key metrics.
 
-### ALS vs Popularity-based Baseline
+### Mean Hits@10 Across Recommenders
 
-This comparison evaluates the performance of the Alternating Least Squares (ALS) model against a simple popularity-based baseline.
+![Mean Hits@10 Across Recommenders](fig_10_all_models_hits_mean_Combined_Metrics.png)
 
-#### Hits@10
+*This bar chart compares the average Hits@10 achieved by each recommendation system.* 
 
-![Hits@10 - ALS vs Baseline](fig_1_ALS_vs_Baseline_Hits@10.png)
+### Hits@10 Distribution Across Recommenders
 
-*Results showed that ALS performed significantly better than the Popularity-based Baseline in Hits@10.* (Bar Chart)
+![Hits@10 Distribution Across Recommenders](fig_11_all_models_hits_dist_Combined_Metrics.png)
 
-#### Revenue from Hits
+*This violin plot illustrates the distribution of Hits@10 values for each recommendation system, providing insight into consistency and range of performance.*
 
-![Revenue from Hits - ALS vs Baseline](fig_2_ALS_vs_Baseline_Revenue.png)
+### Mean Revenue from Hits Across Recommenders
 
-*ALS also generated significantly more revenue from hits compared to the Popularity-based Baseline.* (Bar Chart)
+![Mean Revenue from Hits Across Recommenders](fig_12_all_models_revenue_mean_Combined_Metrics.png)
 
-#### Basket Coverage
-
-![Basket Coverage - ALS vs Baseline](fig_3_ALS_vs_Baseline_Coverage.png)
-
-*ALS provided significantly better basket coverage than the Popularity-based Baseline.* (Bar Chart)
-
-### SASRec vs Popularity-based Baseline
-
-This section compares the SASRec model against the Popularity-based Baseline.
-
-#### Hits@10
-
-![Hits@10 - SASRec vs Baseline](fig_4_SASRec_vs_Baseline_Hits@10.png)
-
-*In this comparison, the Popularity-based Baseline performed significantly better than SASRec in Hits@10.* (Bar Chart)
-
-#### Revenue from Hits
-
-![Revenue from Hits - SASRec vs Baseline](fig_5_SASRec_vs_Baseline_Revenue.png)
-
-*The Popularity-based Baseline generated significantly more revenue from hits compared to SASRec.* (Bar Chart)
-
-#### Basket Coverage
-
-![Basket Coverage - SASRec vs Baseline](fig_6_SASRec_vs_Baseline_Coverage.png)
-
-*The Popularity-based Baseline also provided significantly better basket coverage than SASRec.* (Bar Chart)
-
-### ALS vs SASRec
-
-Finally, this section directly compares the ALS model with the SASRec model.
-
-#### Hits@10
-
-![Hits@10 - ALS vs SASRec](fig_7_ALS_vs_SASRec_Hits@10.png)
-
-*ALS performed significantly better than SASRec in Hits@10.* (Bar Chart)
-
-#### Revenue from Hits
-
-![Revenue from Hits - ALS vs SASRec](fig_8_ALS_vs_SASRec_Revenue.png)
-
-*ALS generated significantly more revenue from hits compared to SASRec.* (Bar Chart)
-
-#### Basket Coverage
-
-![Basket Coverage - ALS vs SASRec](fig_9_ALS_vs_SASRec_Coverage.png)
-
-*ALS provided significantly better basket coverage than SASRec.* (Bar Chart)
-
-
-## Enhanced Visualizations: Distribution of A/B Test Metrics
-
-To provide a deeper understanding of the recommender systems' performance, the following violin plots visualize the *distribution* of the metrics (Hits@10, Revenue from Hits, Basket Coverage). These plots show the probability density of the data at different values, giving a richer view than just the mean.
-
-### ALS vs Popularity-based Baseline Distributions
-
-#### Hits@10 Distribution
-
-![Hits@10 Distribution - ALS vs Baseline](fig_1_Dist_ALS_vs_Baseline_Hits@10_Dist.png)
-
-#### Revenue from Hits Distribution
-
-![Revenue from Hits Distribution - ALS vs Baseline](fig_2_Dist_ALS_vs_Baseline_Revenue_Dist.png)
-
-#### Basket Coverage Distribution
-
-![Basket Coverage Distribution - ALS vs Baseline](fig_3_Dist_ALS_vs_Baseline_Coverage_Dist.png)
-
-### SASRec vs Popularity-based Baseline Distributions
-
-#### Hits@10 Distribution
-
-![Hits@10 Distribution - SASRec vs Baseline](fig_4_Dist_SASRec_vs_Baseline_Hits@10_Dist.png)
-
-#### Revenue from Hits Distribution
-
-![Revenue from Hits Distribution - SASRec vs Baseline](fig_5_Dist_SASRec_vs_Baseline_Revenue_Dist.png)
-
-#### Basket Coverage Distribution
-
-![Basket Coverage Distribution - SASRec vs Baseline](fig_6_Dist_SASRec_vs_Baseline_Coverage_Dist.png)
-
-### ALS vs SASRec Distributions
-
-#### Hits@10 Distribution
-
-![Hits@10 Distribution - ALS vs SASRec](fig_7_Dist_ALS_vs_SASRec_Hits@10_Dist.png)
-
-#### Revenue from Hits Distribution
-
-![Revenue from Hits Distribution - ALS vs SASRec](fig_8_Dist_ALS_vs_SASRec_Revenue_Dist.png)
-
-#### Basket Coverage Distribution
-
-![Basket Coverage Distribution - ALS vs SASRec](fig_9_Dist_ALS_vs_SASRec_Coverage_Dist.png)
+*This bar chart compares the average 'Revenue from Hits' generated by each recommendation system, indicating their effectiveness in recommending reordered items.* 
 
 
 ## Overall Consumer Behavior Metrics (Simulated)
